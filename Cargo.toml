@@ -1,0 +1,21 @@
+[package]
+name = "rust-template"
+version = "0.0.0"
+edition = "2018"
+
+authors = ["Martijn Gribnau <garm@ilumeo.com>"]
+# description = ""
+# license = "Apache-2.0 WITH LLVM-exception"
+# repository = "https://github.com/foresterre/{TODO-repository}"
+
+# rust-version = ""
+# OR if MSRV < 1.56
+#[package.metadata]
+#msrv = ""
+
+#keywords = [], # Choose up to 5
+#categories = [] # Choose up to 5, from: https://crates.io/category_slugs
+
+publish = false
+
+[dependencies]

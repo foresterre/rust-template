@@ -1,0 +1,10 @@
+# Rust
+/target
+/Cargo.lock # remove line if crate has 'bin' package
+
+# Jetbrains IDE's
+.idea/
+*.iml
+
+# VS Code
+.vscode/
