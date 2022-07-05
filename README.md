@@ -16,8 +16,12 @@ Contributions, feedback or other correspondence are more than welcome! Feel free
 
 ## License
 
-Licensed under Apache License, Version 2.0 with LLVM-Exception ([LICENSE](LICENSE) or https://foundation.llvm.org/relicensing/LICENSE.txt)
+Licensed under either of
 
+* Apache License, Version 2.0, ([LICENSE-APACHE](LICENSE-APACHE) or http://www.apache.org/licenses/LICENSE-2.0)
+* MIT license ([LICENSE-MIT](LICENSE-MIT) or http://opensource.org/licenses/MIT)
+
+at your option.
 
 #### Contribution
 
