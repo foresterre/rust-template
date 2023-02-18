@@ -8,7 +8,7 @@ on:
       - staging # for Bors
       - trying # for Bors
   schedule:
-    - cron: '00 05 * * *'
+    - cron: '00 06 * * *'
 jobs:
   msrv:
     name: msrv
@@ -16,13 +16,9 @@ jobs:
     continue-on-error: true
     steps:
       - name: checkout_repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: install_rust
-        uses: actions-rs/toolchain@v1
-        with:
-          toolchain: stable
-          override: true
-          profile: minimal
+        uses: dtolnay/rust-toolchain@stable
       - name: install_cargo_msrv
         run: cargo install cargo-msrv --no-default-features
       - name: version_of_cargo_msrv
