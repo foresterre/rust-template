@@ -1,23 +1,18 @@
 [package]
 name = "rust-template"
 version = "0.0.0"
-edition = "2018"
+edition = "2021"
 
 authors = ["Martijn Gribnau <garm@ilumeo.com>"]
 # description = ""
 # license = "Apache-2.0 WITH LLVM-exception"
-# repository = "https://github.com/foresterre/{TODO-repository}"
+# repository = "https://github.com/foresterre/{{repository}}"
 
-#keywords = [], # Choose up to 5
-#categories = [] # Choose up to 5, from: https://crates.io/category_slugs
+#keywords = [{{keywords}}], # Choose up to 5
+#categories = [{{categories}}] # Choose up to 5, from: https://crates.io/category_slugs
 
 publish = false
 
-# TODO: find MSRV by running `cargo msrv -- cargo check --all-features`
-#
-# rust-version = ""
-# OR if MSRV < 1.56
-#[package.metadata]
-#msrv = ""
+rust-version = "1.56"
 
 [dependencies]
