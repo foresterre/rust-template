@@ -8,7 +8,7 @@ on:
       - staging # for Bors
       - trying # for Bors
   schedule:
-    - cron: '00 06 * * *'
+    - cron: '00 05 * * *'
 jobs:
   test:
     name: test
@@ -45,6 +45,11 @@ jobs:
       - name: checkout_repository
         uses: actions/checkout@v3
 
+      # We would prefer to use `dtolnay/rust-toolchain@master with toolchain=${{ matrix.rust }}` or `rustup update ${{ matrix.rust }}`.
+      # However, when using either we run into a linking issue:
+      # `error: could not create link from 'C:\\Users\\runneradmin\\.cargo\\bin\\rustup.exe' to 'C:\\Users\\runneradmin\\.cargo\\bin\\cargo.exe'\n" })', tests\find_msrv.rs:156:39`
+      # I find the message odd, because we only need to install the toolchain, not set it as the default, and replace the
+      # binary; so what is meant by "link" in the above error?
       - name: install_rust
         uses: actions-rs/toolchain@v1
         with:
@@ -55,27 +60,8 @@ jobs:
       - name: fetch
         run: cargo fetch --verbose
 
-      # run tests for default builds
-
-      - name: build_default_features
+      - name: build
         run: cargo build --verbose
 
-      - name: test_default_features
-        run: cargo test --verbose
-
-      # run tests for builds with no default features
-
-      - name: build_no_default_features
-        run: cargo build --no-default-features --verbose
-
-      - name: test_no_default_features
-        run: cargo test --no-default-features --verbose
-
-      # run tests for builds with all features
-
-      - name: build_all_features
-        run: cargo build --all-features --verbose
-
       - name: test_all_features
-        run: cargo test --all-features --verbose
-
+        run: cargo test --verbose

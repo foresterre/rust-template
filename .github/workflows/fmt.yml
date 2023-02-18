@@ -14,18 +14,11 @@ jobs:
     steps:
       - name: checkout_repository
         uses: actions/checkout@v3
-        with:
-          fetch-depth: 1
 
       - name: install_rust
-        uses: actions-rs/toolchain@v1
+        uses: dtolnay/rust-toolchain@stable
         with:
-          toolchain: stable
-          override: true
-          profile: minimal
-
-      - name: install_rustfmt
-        run: rustup component add rustfmt
+          components: rustfmt
 
       - name: check_formatting
         run: |
