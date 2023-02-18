@@ -8,7 +8,7 @@ on:
       - staging # for Bors
       - trying # for Bors
   schedule:
-    - cron: '00 06 * * *'
+    - cron: '00 05 * * *'
 jobs:
   msrv:
     name: msrv
