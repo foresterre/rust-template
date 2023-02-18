@@ -2,11 +2,11 @@
 
 ## [Unreleased] 
 
-[Unreleased]: https://github.com/foresterre/storyteller/compare/v0.0.0-template...HEAD
+[Unreleased]: https://github.com/foresterre/rust-template
 
 <!-- Example:
 
-## [0.1.0] - 2022-01-01
+## [0.0.0] - 2022-01-01
 
 ### Added
 
@@ -20,13 +20,6 @@
 
 ### Security
 
-
-[0.1.0]: https://github.com/foresterre/bisector/compare/v0.0.0...v0.1.0
+[0.0.0]: https://github.com/foresterre/rust-template/releases/tag/v0.0.0
 
 -->
-
-# Legend
-
-| Pictogram | Meaning         |
-|-----------|-----------------|
-| ⚠       | Breaking change |
