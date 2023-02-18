@@ -15,4 +15,7 @@ publish = false
 
 rust-version = "1.56"
 
+[package.metadata.release]
+tag-name = "v{{version}}"
+
 [dependencies]
