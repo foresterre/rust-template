@@ -5,7 +5,7 @@ edition = "2021"
 
 authors = ["Martijn Gribnau <garm@ilumeo.com>"]
 # description = ""
-# license = "Apache-2.0 WITH LLVM-exception"
+# license = "Apache-2.0 OR MIT"
 # repository = "https://github.com/foresterre/{{repository}}"
 
 #keywords = [{{keywords}}], # Choose up to 5
