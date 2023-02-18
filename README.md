@@ -1,5 +1,5 @@
-# {TODO-project-name}
-<!-- _A tag line_ -->
+# {{project}}
+<!-- _{{tagline}}_ -->
 
 ## Table of contents
 
